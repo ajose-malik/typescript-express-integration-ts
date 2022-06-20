@@ -1,0 +1,27 @@
+{
+  "name": "typescript-express-integration-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./build/index.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajose-malik/typescript-express-integration-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajose-malik/typescript-express-integration-ts/issues"
+  },
+  "homepage": "https://github.com/ajose-malik/typescript-express-integration-ts#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cookie-session": "^2.0.0",
+    "express": "^4.18.1"
+  }
+}
