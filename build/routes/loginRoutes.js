@@ -6,7 +6,7 @@ const router = (0, express_1.Router)();
 exports.router = router;
 router.get('/login', (req, res) => {
     res.send(`
-  <form action="">
+  <form method="POST">
     <div>
       <label>Email</label>
       <input name="email" type="email" />
@@ -21,6 +21,5 @@ router.get('/login', (req, res) => {
 });
 router.post('/login', (req, res) => {
     const { email, password } = req.body;
-    console.log(req.body);
     res.send(email + password);
 });

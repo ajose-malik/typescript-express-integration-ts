@@ -5,7 +5,7 @@ const router = Router();
 
 router.get('/login', (req: Request, res: Response) => {
   res.send(`
-  <form action="">
+  <form method="POST">
     <div>
       <label>Email</label>
       <input name="email" type="email" />
