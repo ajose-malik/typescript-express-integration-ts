@@ -25,7 +25,8 @@ router.get('/login', (req: RequestWithBody, res: Response) => {
 router.post('/login', (req: RequestWithBody, res: Response) => {
   const {email, password} = req.body
   if (email) {
-    res.send(email)
+    req.session = {loggedIn: true}
+    res.redirect('/')
   } else {
     res.send('No email provided')
   }
